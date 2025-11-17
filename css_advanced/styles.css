@@ -53,7 +53,7 @@
 }
 
 header {
-    background: url('/css_advanced/assets/background.png');
+    background: url('./assets/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
