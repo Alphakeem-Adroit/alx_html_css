@@ -526,5 +526,18 @@ footer p {
 
     main .quote-main {
       flex-direction: column;
-}
-}
+    }
+
+    footer {
+        padding: 1rem 0;
+    }
+
+    footer section {
+        width: 90%;
+        gap: 2rem;
+    }
+
+    .footer-items {
+        padding-top: 2rem;
+    }
+ }
