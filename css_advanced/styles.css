@@ -58,7 +58,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,6 +107,7 @@ h1 {
     font-family: source-sans-pro-bold, sans-serif;
     font-size: 120px;
     color: var(--white);
+    margin-top: 50px;
 }
 
 .header-subtext {
@@ -131,8 +132,16 @@ h1 {
     font-size: 14px;
     font-weight: bold;
     margin-top: 2rem;
+    margin-bottom: 2rem;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-text button:hover,
+.free-membership button:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    transition: all 0.3s ease;
 }
 
 .header-pros {
@@ -463,4 +472,59 @@ footer p {
     color: var(--white);
     font-family: source-sans-pro, sans-serif;
     opacity: .3;
+}
+
+
+/* ========================== */
+        /* MEDIA QUERY */
+/* ========================== */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 80px;
+        margin-bottom: 2rem;
+    }
+
+    .pros-list,
+    .tutorial-items,
+    .membership-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        place-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        width: 90%;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    .brand-logo {
+        width: 140px;
+    }
+
+    h1 {
+        font-size: 80px;
+        line-height: 1;
+        margin-bottom: 2rem;
+    }
+
+    .pros-list,
+    .tutorial-items,
+    .membership-list,
+    .faq-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        place-items: center;
+    }
+
+    main .quote-main {
+      flex-direction: column;
+}
 }
