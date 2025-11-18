@@ -284,6 +284,11 @@ main .popular-tutorial h2 {
     gap: .7rem;
 }
 
+.tutorial-card:hover {
+    cursor: pointer;
+    background-color: #fbfbfb
+}
+
 .tutorial-card h3 {
     font-family: source-sans-pro-bold, sans-serif;
     padding: 0 10px;
@@ -325,6 +330,7 @@ main .popular-tutorial h2 {
     justify-content: space-between;
     width: 100%;
     padding: 0 10px;
+    margin-bottom: 1rem;
 }
 
 .stars {
@@ -478,6 +484,16 @@ footer p {
 /* ========================== */
         /* MEDIA QUERY */
 /* ========================== */
+
+@media (max-width: 1340px) {
+    .tutorial-items,
+    .membership-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        place-items: center;
+    }
+}
 
 @media (max-width: 768px) {
     h1 {
