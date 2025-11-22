@@ -59,7 +59,7 @@ html {
 
 /* HERO SECTION */
 header {
-    background: url('/headphones/assets/images/headphones_hero_1.jpg');
+    background: url('/headphones/public/images/headphones_hero_1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
