@@ -138,18 +138,45 @@ button:hover {
 
 .hero-heading .heading-subtext {
     font-family: 'source-sans-pro-light', sans-serif;
+    line-height: 1.5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main .what-we-do {
     max-width: var(--max-width);
     width: 100%;
-    padding: 5rem 0;
+    padding: 6rem 0;
     display: flex;
+    gap: 4rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+.what-we-do-heading {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.what-we-do-heading h2 {
+    font-family: 'source-sans-pro-Bold', sans-serif;
+}
+
+.what-we-do-heading p {
+    font-family: 'source-sans-pro-light', sans-serif;
+    line-height: 1.5rem;
+}
 
 
 .holberton_school-icon-ic_sound,
@@ -162,7 +189,6 @@ main .what-we-do {
     font-variant: normal;
     font-size: 5rem;
     text-transform: none;
-    speak: none;
     color: var(--accent);
     line-height: 1;
     -webkit-font-smoothing: antialiased;
@@ -183,4 +209,28 @@ main .what-we-do {
 
 .holberton_school-icon-ic_hearing:before {
     content: "\e90d";
+}
+
+.what-we-do-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 100%;
+}
+
+.what-we-do-cardItems {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.what-we-do-cardItems h3 {
+    font-family: 'source-sans-pro-bold', sans-serif;
+}
+
+.what-we-do-cardItems p {
+    font-family: 'source-sans-pro-light', sans-serif;
 }
