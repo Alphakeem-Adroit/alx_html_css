@@ -107,7 +107,10 @@ nav ul li a:hover {
 }
 
 /* MOBILE NAV STARTS*/
-
+.mobile-nav-links,
+.mobile-nav {
+    display: none;
+}
 /* MOBILE NAV ENDS */
 
 header .hero-heading {
@@ -431,33 +434,6 @@ footer p {
 }
 
 @media (max-width: 768px) {
-    header .hero-heading {
-        width: 80%;
-    }
-
-    .what-we-do-heading,
-    .result-heading {
-        width: 70%;
-    }
-
-    .what-we-do-cards,
-    .result-cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-        place-items: center;
-    }
-
-    .what-we-do-cardItems {
-        width: 200px;
-    }
-
-    form {
-        width: 50%;
-    }
-}
-
-@media (max-width: 480px) {
     header nav {
         display: none;
     }
@@ -469,10 +445,6 @@ footer p {
         padding: 1rem;
         align-items: center;
         gap: 2rem;
-    }
-
-    .mobile-nav-links {
-        display: none;
     }
 
     .mobile-nav-links.show{
@@ -536,7 +508,33 @@ footer p {
         content: "\e911"
     }
 
+    header .hero-heading {
+        width: 80%;
+    }
 
+    .what-we-do-heading,
+    .result-heading {
+        width: 70%;
+    }
+
+    .what-we-do-cards,
+    .result-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        place-items: center;
+    }
+
+    .what-we-do-cardItems {
+        width: 200px;
+    }
+
+    form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
     header .hero-heading {
         width: 90%;
         margin-bottom: 2rem;
