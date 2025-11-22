@@ -88,3 +88,7 @@
 .holberton_school-icon-star:before {
   content: "\e914";
 }
+
+.icon-close1:before {
+  content: "\e902";
+}
