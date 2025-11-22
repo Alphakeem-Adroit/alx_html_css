@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --accent: #FF6565;
+  --bg-dark: #071827;
+  --white: #fff;
+  --max-width: 1000px;
+  --transition: 0.25s ease;
+}
+
+@font-face {
+  font-family: 'source-sans-pro';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-light';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-bold';
+  src: url('/fonts/source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'source-sans-pro-italic';
+  src: url('/fonts/source-sans-pro/SourceSansPro-It.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'spincycle-ot';
+  src: url('/fonts/Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+    background: url('/headphones/assets/images/headphones_hero_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+/* nav img {
+    
+} */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem
+}
+
+nav ul li a {
+    font-family: 'source-sans-pro', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    transition: color var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--accent)
+}
+
+header .hero-heading {
+    max-width: var(--max-width);
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    font-family: 'source-sans-pro', sans-serif;
+    margin-bottom: 5rem;
+}
+
+.hero-heading .main-heading {
+    margin-bottom: 2rem;
+}
+
+.hero-heading .main-heading h1 {
+    font-size: 2rem;
+    font-family: 'source-sans-pro-bold', sans-serif;
+    font-weight: 500;
+}
+
+.hero-heading .main-heading p {
+    font-family: 'source-sans-pro', sans-serif;
+    font-weight: 300;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 100px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0.5, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--bg-dark);
+    transition: var(--transition);
+}
+
+.hero-heading .heading-subtext {
+    font-family: 'source-sans-pro-light', sans-serif;
+}
+
+main .what-we-do {
+    max-width: var(--max-width);
+    width: 100%;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+    font-family: 'holberton_school-icons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 5rem;
+    text-transform: none;
+    speak: none;
+    color: var(--accent);
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.holberton_school-icon-ic_sound:before {
+    content: "\e90e";
+}
+
+.holberton_school-icon-ic_video:before {
+    content: "\e910";
+}
+
+.holberton_school-icon-ic_music:before {
+    content: "\e911";
+}
+
+.holberton_school-icon-ic_hearing:before {
+    content: "\e90d";
+}
