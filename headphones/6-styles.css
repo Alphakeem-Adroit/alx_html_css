@@ -559,3 +559,50 @@ footer p {
         gap: 2rem;
     }
 }
+
+/* pentagon drawing 1 */
+/* .pentagon {
+  width: 140px;
+  height: 120px;
+  background: var(--accent);
+  color: var(--white);
+  padding: 2rem;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+} */
+
+/* pentagon drawing 2 */
+/* .section {
+  position: relative;
+  padding: 100px;
+  background: var(--accent);
+  overflow: hidden;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #4a90e2;
+  top: -50px;
+  left: -50px;
+  opacity: 0.15;
+  clip-path: polygon(
+    50% 0%,
+    100% 38%,
+    81% 100%,
+    19% 100%,
+    0% 38%
+  );
+  z-index: 0;
+}
+
+.section * {
+  position: relative;
+  z-index: 1;
+} */
+
