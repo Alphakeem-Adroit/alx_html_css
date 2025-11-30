@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+
+    <form id="feedbackForm" action="/headphones/" method="post">
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <span class="email-error" id="emailError"></span>
+        </div>
+
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min="18" max="99" required>
+            <span class="age-error" id="ageError"></span>
+        </div>
+
+        <div>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+            <span class="message-error" id="messageError"></span>
+        </div>
+
+        <div>
+            <input type="submit" value="Send Feedback">
+        </div>
+    </form>
+
+    <script>
+        const feedbackForm = document.getElementById('feedbackForm');
+
+        feedbackForm.addEventListener('submit', function(event) {
+            // Preventing default form submission
+            event.preventDefault();
+
+            // Email validation
+            const emailInput = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+
+            if (!/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/.test(emailInput.value)) {
+                emailError.textContent = 'Please, enter a valid email address.'
+            } else {
+                emailError.textContent = '';
+            }
+
+            // Age validation
+            const ageInput = document.getElementById('age');
+            const ageError = document.getElementById('ageError');
+
+            if (ageInput.value < 18 || ageInput.value > 99) {
+                ageError.textContent = 'Put the right age range, my friend';
+                return;
+            } else {
+                ageError.textContent = '';
+            }
+
+            // If all pass, then submit
+            if (!hasError) {
+                feedbackForm.submit();
+            }
+        });
+    </script>
+</body>
+</html>
